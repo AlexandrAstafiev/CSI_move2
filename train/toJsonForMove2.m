@@ -1,14 +1,14 @@
 
-filename="d:\\csiMove2\\train\\json\\plase1.dat";
+filename="d:\\csiMove2\\train\\json\\plase15.dat";
 % Создаём json файл и обнуляем его
 fnid=fopen(filename + ".json",'w');
 fclose('all');
 fid=fopen(filename + ".json",'a');
 stringJSON="[";
-files = 5
+files = 6
 fprintf(fid, stringJSON); 
 for f = 1:files
-    filename="d:\\csiMove2\\train\\dat\\plase1ds"+f+".dat";
+    filename="d:\\csiMove2\\train\\dat\\plase15ds"+f+".dat";
 
     % Количество поднесущих
     toto=56;

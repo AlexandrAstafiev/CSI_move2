@@ -1,14 +1,14 @@
 
-filename="d:\\csiMove2\\train\\json\\plase1.dat";
+filename="d:\\csiMove2\\train\\json\\plase11.dat";
 % Создаём json файл и обнуляем его
 fnid=fopen(filename + ".json",'w');
 fclose('all');
 fid=fopen(filename + ".json",'a');
 stringJSON="[";
-files = 5
+files = 6
 fprintf(fid, stringJSON); 
 for f = 1:files
-    filename="d:\\csiMove2\\train\\dat\\plase1ds"+f+".dat";
+    filename="d:\\csiMove2\\train\\dat\\plase11ds"+f+".dat";
 
     % Количество поднесущих
     toto=56;
@@ -53,12 +53,12 @@ for f = 1:files
                               
                 % Закрыть скобку
                 if ((j==toto)&&(i==length(Fmas)))%length(Fmas)
-                        {
-                    if (f==files-1)
+
+                    if (f==files)
                         stringJSON=stringJSON+"}";
                     else
                         stringJSON=stringJSON+"},\n";
-                        }
+                    end
                 else
                         stringJSON=stringJSON+"},\n";
                 end
