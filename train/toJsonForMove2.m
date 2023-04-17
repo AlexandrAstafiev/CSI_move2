@@ -54,7 +54,7 @@ for f = 1:files
                 % Закрыть скобку
                 if ((j==toto)&&(i==length(Fmas)))%length(Fmas)
 
-                    if (f==files-1)
+                    if (f==files)
                         stringJSON=stringJSON+"}";
                     else
                         stringJSON=stringJSON+"},\n";
